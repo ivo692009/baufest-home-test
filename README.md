@@ -1,2 +1,2 @@
-# buafest-home-test
-Home Test de Buafest con Cypress
+# baufest-home-test
+Home Test de Baufest con Cypress
