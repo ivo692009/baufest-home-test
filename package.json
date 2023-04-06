@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ivo692009/baufest-home-test#readme",
   "dependencies": {
     "cypress": "^12.9.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1"
   }
 }

@@ -7,15 +7,15 @@
 //-Agregar una laptop al carrito
 //-Comprobar que se agregó al carrito.
 
-//NOTA: Este ejercicio se puede hacer en varias partes pero, en esta seccion, decidi hacerlo junto
+//NOTA: Este ejercicio se puede hacer en varias partes y lo separare en dos, en singin + login + logout y la compra
 
 //Esta una referencia para las ayudas para los comandos con cypress
 /// <reference types="cypress" />
 //Agregamos esta referencia para utilizar el Xpath como funcion
 require('cypress-xpath');
 
-describe('Demoblaze', () => {
-  it('Alta de usuario + Login + Compra de laptop + Logout del usuario dado de alta', () => {
+describe('Demoblaze en partes', () => {
+  it('Alta de usuario + Login + Logout del usuario dado de alta', () => {
     //Visitamos la pagina
     cy.visit('https://www.demoblaze.com/index.html')
     //Validamos que estemos en la pagina deseada
@@ -49,6 +49,36 @@ describe('Demoblaze', () => {
     //Validamos que exitosamente el usuario se logea
     cy.get('#nameofuser').should("be.visible").contains(uyc)
 
+    //Realizamos el logout del usuario
+    cy.get('#logout2').should("be.visible").click()
+    cy.wait(1000)
+    // //validamos que aparesca el boton de "sing in" una ves deslogeado el usuario
+    cy.get('#login2').should("be.visible").contains("Log in")
+
+    //En este punto ya estamos deslogeados y realizado el ejercicio
+  })
+
+  it('Alta de usuario + Login + Compra de laptop + Logout del usuario dado de alta', () => {
+    //Visitamos la pagina
+    cy.visit('https://www.demoblaze.com/index.html')
+    //Validamos que estemos en la pagina deseada
+    cy.title().should("eq", "STORE")
+    //En este caso vamos a utilizar un usuario y contraseña que ya conocemos, podemos utilizar el del spect anterior
+
+    let uyc = "pedroperez117"
+
+    //Entramos en la parte de logear para entrar
+    cy.get('#login2').should("be.visible").click()
+    cy.wait(1000)
+    //colocamos el usuario y contraseña que elegimos
+    cy.get('#loginusername').should("be.visible").type(uyc)
+    cy.wait(1000)
+    cy.get('#loginpassword').should("be.visible").type(uyc)
+    cy.wait(1000)
+    cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').should("be.visible").click()
+    //Validamos que exitosamente el usuario se logea
+    cy.get('#nameofuser').should("be.visible").contains(uyc)
+
     //Seleccionamos el apartado de Laptops en la barra lateral 
     cy.xpath("/html/body/div[5]/div/div[1]/div/a[3]").should("be.visible").click()
     cy.wait(1500)
@@ -65,16 +95,8 @@ describe('Demoblaze', () => {
     //Validamos que esta agregado el producto
     cy.get('.success > :nth-child(2)').should("be.visible").contains("MacBook air")
     cy.wait(1000)
-
-    //Realizamos el logout del usuario
-
-    cy.get('#logout2').should("be.visible").click()
-    cy.wait(1000)
-
-    // //validamos que aparesca el boton de "sing in" una ves deslogeado el usuario
-    cy.get('#login2').should("be.visible").contains("Log in")
-
-    //En este punto ya estamos deslogeados y realizado el ejercicio
+    
+    //En este punto ya habremos agregado al carro el producto sin realizar el logout
   })
   
 })
