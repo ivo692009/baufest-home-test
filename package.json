@@ -18,9 +18,12 @@
   "homepage": "https://github.com/ivo692009/baufest-home-test#readme",
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "build": "^0.1.4",
     "cypress": "^12.9.0"
   },
   "devDependencies": {
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
   }
 }
