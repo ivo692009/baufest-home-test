@@ -37,6 +37,14 @@ describe('Demoblaze', () => {
     cy.get('#signInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').should("be.visible").click()
     //esperamos un segundo
     cy.wait(1000)
+    cy.on('window:alert', (str) => {
+      expect(str).to.equal(`This user already exist.`)
+      //Y si el usuario ya existe, lanzamos un mensaje de error forzado
+      throw new Error("El usuario ya existe")
+      cy.visit('https://www.demoblaze.com/index.html')
+      cy.wait(1000)
+
+    })
     //Entramos en la parte de logear para entrar
     cy.get('#login2').should("be.visible").click()
     cy.wait(1000)

@@ -5,6 +5,9 @@ Este es un Home Test por parte de Baufest con ejercicios hechos en cypress, Post
 
 ## Ejercicio Web con Cypress
 
+## INFORME DE REPORTES
+
+Los reportes generados por las pruebas automatizadas estan en la carpeta reports\html\index.html
 
 ## Pre requisitos
 
@@ -38,6 +41,15 @@ Así mismo, antes de ejecutar Cypress debemos previamente tener el paquete npx p
 Una vez que ya tengamos todo pasamos a ejecutar Cypress:
 
 `npx cypress open`
+
+Se abrira el navegador una ventana, Seleccionaremos la opcion de "e2e Testing".<br/>
+Seleccionaremos el navegador que querramos (Chrome por ejemplo).<br/>
+Clickeamos el boton de "Start e2e Testing"
+Se abrira el navegador. Y en la pestaña de "Specs" se podra visualizar los tests automatizados.<br/>
+
+### NOTA
+
+No pude hacer andar Cocumber pero dentro de la raiz de las pruebas deje desarrolado los Specs
 
 
 ## Ejercicio Web Service con Postman
