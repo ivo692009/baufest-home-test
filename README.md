@@ -1,6 +1,6 @@
 # Baufest-HomeTest
 
-Este es un Home Test por parte de Baufest con ejercicios hechos en cypress, Postman y Mobile.
+Este es un Home Test por parte de Baufest con ejercicios hechos en cypress, Postman y Mobile.<br/>
 
 
 ## Ejercicio Web con Cypress
@@ -8,17 +8,17 @@ Este es un Home Test por parte de Baufest con ejercicios hechos en cypress, Post
 
 ## Pre requisitos
 
--Tener instalado Node.JS
--Visual Studio o similar
--Tener instalado git
+-Tener instalado Node.JS<br/>
+-Visual Studio o similar<br/>
+-Tener instalado git<br/>
 
 ## Consignas
 
--> Ir a la web: https://www.demoblaze.com/index.html
--> Dar de alta un usuario.
--> Login y logout con el usuario dado de alta.
--> Agregar una laptop al carrito.
--> Comprobar que se agregó al carrito.
+-> Ir a la web: https://www.demoblaze.com/index.html<br/>
+-> Dar de alta un usuario.<br/>
+-> Login y logout con el usuario dado de alta.<br/>
+-> Agregar una laptop al carrito.<br/>
+-> Comprobar que se agregó al carrito.<br/>
 
 ## Primeros pasos
 
@@ -52,15 +52,15 @@ Ejercicio utilizando una API de la página PetStore Swagger para realizar petici
 
 ## Consignas
 
--> Tomando como referencia lo documentado en este swagger: https://petstore.swagger.io/
--> Agregar una mascota realizando un POST al path /v2/pet
--> Realizar un GET /v2/pet/{petId} para obtener una mascota existente.
--> Modificar una mascota existente mediante PUT al path /v2/pet.
+-> Tomando como referencia lo documentado en este swagger: https://petstore.swagger.io/<br/>
+-> Agregar una mascota realizando un POST al path /v2/pet<br/>
+-> Realizar un GET /v2/pet/{petId} para obtener una mascota existente.<br/>
+-> Modificar una mascota existente mediante PUT al path /v2/pet.<br/>
 
 En todos los casos validar:
 
--> Status code esperado.
--> Schema del response.
+-> Status code esperado.<br/>
+-> Schema del response.<br/>
 
 ## Ejercicio
 
