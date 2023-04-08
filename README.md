@@ -1,6 +1,9 @@
 # Baufest-HomeTest
 
 Este es un Home Test por parte de Baufest con ejercicios hechos en cypress, Postman y Mobile.<br/>
+Este es un repositorio publico como justificacion del ejercicio.<br/>
+
+Esta URL es `https://github.com/ivo692009/baufest-home-test`
 
 
 ## Ejercicio Web con Cypress
@@ -79,3 +82,39 @@ En todos los casos validar:
 Dirigirse a la siguiente pagina en donde estan las llamadas junto a las consignas:
 
 `https://www.postman.com/api-testing-cypress/workspace/baufest-hometest/overview`
+
+
+## Ejercicio Web Service con Postman
+
+## Resumen
+
+Ejercicio utilizando una APK para automatizar algunos ejercicios
+
+## Consignas
+
+->A partir de siguiente la APK:
+https://github.com/webdriverio/native-demoapp/releases/download/v0.4.0/AndroidNativeDemoApp-0.4.0.apk . 
+
+* Sección Login.
+->Realizar Login.
+->Realizar Signup.
+
+* Sección forms:
+->Completar todos los campos y activar.
+
+* Sección Webview.
+-> Realizar una búsqueda de la palabra “browser”
+-> Navegar entre los tabs: Docs, API, Help, Versions, Blog, Contribute.
+
+## ACLARACION
+
+Actualmente no tengo los conocimientos sobre la automatizacion de aplicaciones mobiles.<br/> 
+Por lo tanto, voy a dejar en una carpeta un archivo de video haciendo el recorrido y los ejercicios del mismo.
+Asi mismo voy a dejar un archivo con los casos de prueba y un informe de mejora para la aplicacion.
+Estos mismos se encuentran en la carpeta `Mobile Testing`
+
+
+## POSIBLES MEJORAS
+
+Existen redactados unos archivos de mejoras separado por ejercicios.<br/>
+Estos mismos se encuentran en la carpeta `Posibles Mejoras` seguido por el nombre de las aplicaciones.
