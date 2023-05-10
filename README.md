@@ -79,12 +79,14 @@ En todos los casos validar:
 
 ## Ejercicio
 
+La resolucion esta dentro de la carpeta "api" en la seccion "e2e" dentro de cypress. <br/>
+Asi mismo, tambien realize la resolucion con Postman<br/>
 Dirigirse a la siguiente pagina en donde estan las llamadas junto a las consignas:
 
 `https://www.postman.com/api-testing-cypress/workspace/baufest-hometest/overview`
 
 
-## Ejercicio Web Service con Postman
+## Mobile Testing
 
 ## Resumen
 
