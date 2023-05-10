@@ -14,6 +14,7 @@
 
 //Agregamos esta referencia para utilizar el Xpath como funcion
 require('cypress-xpath');
+//Importamos el objeto donde tenemos nuestro recorrido y validaciones
 import DemoblazeObject from '../support/pageObjects/Demoblaze/demoblaze_PO'
 
 describe('Demoblaze en partes', () => {
@@ -21,23 +22,25 @@ describe('Demoblaze en partes', () => {
   Cypress.on('uncaught:exception',(err, runnable) =>{
     return false
   })
-
+    //Creamos la instacia objeto 
     const master = new DemoblazeObject()
 
+    //Tenemos que crear el usuario y contraseña del nuevo usuario que necesitemos
+    //para este ejercicio
+    let usuario="josehermandes12"
+    let password="josesitomartines"
+  it('Alta de usuario + Login + Logout del usuario dado de alta', () => {
     master.visitHome()
-    
-    
-
-  
-  it.only('Alta de usuario + Login + Logout del usuario dado de alta', () => {
-    
-    
+    master.SingUp(usuario,password)
+    master.LogIn(usuario,password)
+    master.LogOut()
    
   })
 
-  it('Alta de usuario + Login + Compra de laptop + Logout del usuario dado de alta', () => {
-    
-
+  it.only('Login + Compra de laptop', () => {
+    master.visitHome()
+    master.LogIn(usuario,password)
+    master.Compra()
    
   })
   
