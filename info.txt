@@ -1,0 +1,10 @@
+Try it first
+Record a run in your terminal.
+npx cypress run --record --key e43940d7-14a5-4093-9225-9c132f19f616
+GitHub Actions setup
+Run Cypress tests every time you push.
+Set CYPRESS_RECORD_KEY in your GitHub repo → Settings → Secrets → Actions:
+
+CYPRESS_RECORD_KEY
+e43940d7-14a5-4093-9225-9c132f19f616
+Then add this file to your repository:

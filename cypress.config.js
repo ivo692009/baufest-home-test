@@ -6,6 +6,7 @@ reporter: 'cypress-mochawesome-reporter',
 "pageLoadTimeout" :60000,
 "defaultCommandTimeout": 15000,
   e2e: {
+      experimentalStudio: true,
       setupNodeEvents(on, config) {
         require('cypress-mochawesome-reporter/plugin')(on);
     },
